@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Guru</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><script>
+  // Cek apakah udah login
+  if(localStorage.getItem('loginGuru') !== 'true') {
+    alert('Anda harus login dulu!');
+    window.location.href = "login.html";
+  }
+</script>
+  <div class="container">
+    <a href="index.html"><button>← Kembali</button></a>
+    <h2>Dashboard Guru</h2>
+    <div style="display:flex; gap:10px; margin-bottom:15px;">
+  <input type="text" id="cariInput" placeholder="Cari Nama / Judul Tugas...">
+  <select id="filterMapel">
+    <option value="semua">Semua Mapel</option>
+    <option value="Matematika">Matematika</option>
+    <option value="IPA">IPA</option>
+    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+    <option value="IPS">IPS</option>
+  </select>
+</div>
+    <button class="btn-hapus" onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+  localStorage.removeItem('loginGuru');
+  window.location.href = "index.html";
+}
+</script>
+    <button class="btn-hapus" onclick="hapusSemua()">Hapus Semua Data</button>
+    <table id="tabelTugas" border="1">
+      <thead>
+  <tr>
+    <th>Nama</th>
+    <th>Mapel</th>
+    <th>Judul</th>
+    <th>File</th>
+    <th>Waktu</th>
+    <th>Aksi</th>  <!-- PINDAH KE SINI -->
+  </tr>
+</thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
