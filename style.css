@@ -55,7 +55,7 @@ th { background: #4CAF50; color: white; padding: 10px; }
 td { padding: 10px; border-bottom: 1px solid #ddd; }
 a { color: #2196F3; text-decoration: none; }
 th, td { padding: 8px; text-align: left; }
-/* HP dan Tablet */
+/* Untuk HP dan Tablet */
 @media (max-width: 768px) {
   body { padding: 10px; }
   .container {
@@ -66,7 +66,7 @@ th, td { padding: 8px; text-align: left; }
   h1 { font-size: 22px; }
   input, select, button { font-size: 14px; }
 
-  /* Bikin tabel jadi kebawah di HP */
+  /* Membuat tabel tampil ke bawah di HP  */
   table { border: 0; }
   table thead { display: none; }
   table tr { 
