@@ -18,7 +18,7 @@
   </div>
 
   <script>
-    const PASSWORD_GURU = "guru123"; // <-- Ganti passwordnya di sini
+    const PASSWORD_GURU = "guru123"; // <-- Ganti password guru disini 
 
     document.getElementById('formLogin').addEventListener('submit', (e) => {
       e.preventDefault();
@@ -26,8 +26,8 @@
       const pesan = document.getElementById('pesanError');
 
       if(inputPass === PASSWORD_GURU) {
-        localStorage.setItem('loginGuru', 'true'); // tandai udah login
-        window.location.href = "guru.html"; // lempar ke dashboard
+        localStorage.setItem('loginGuru', 'true'); // tandai sudah login 
+        window.location.href = "guru.html"; // arahkan ke dashboard guru
       } else {
         pesan.textContent = "Password salah!";
       }
