@@ -1,4 +1,4 @@
-NAMA APLIKASI: Web Pengumpulan Tugas
+NAMA APLIKASI: Website Pengumpulan Tugas Online
 CARA PAKAI:
 1. Buka file index.html
 2. Siswa: Klik "Masuk sebagai Siswa" untuk kumpul tugas
