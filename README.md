@@ -8,7 +8,7 @@ Website sederhana dengan 2 role: Siswa dan Guru.
 
 ## Fitur MVP
 - Siswa: Kumpul tugas + lihat status
-- Guru: Login, lihat semua tugas, download, hapus, cari
+- Guru: Login, lihat semua tugas, download, hapus, cari, filter
 
 ## Teknologi
 HTML, CSS, JavaScript. Penyimpanan pakai localStorage agar data tetap tersimpan tanpa perlu database.
