@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body><script>
-  // Cek apakah udah login
+  // Cek apakah sudah login sebagai guru
   if(localStorage.getItem('loginGuru') !== 'true') {
     alert('Anda harus login dulu!');
     window.location.href = "login.html";
@@ -42,7 +42,7 @@ function logout() {
     <th>Judul</th>
     <th>File</th>
     <th>Waktu</th>
-    <th>Aksi</th>  <!-- PINDAH KE SINI -->
+    <th>Aksi</th>  <!-- Kolom untuk tombol aksi -->
   </tr>
 </thead>
       <tbody></tbody>
