@@ -11,7 +11,7 @@ Website sederhana dengan 2 role: Siswa dan Guru.
 - Guru: Login, lihat semua tugas, download, hapus, cari
 
 ## Teknologi
-HTML, CSS, JavaScript. Tanpa database dulu biar cepat.
+HTML, CSS, JavaScript. Penyimpanan pakai localStorage agar data tetap tersimpan tanpa perlu database.
 
 ## Cara Jalankan
 Buka index.html di browser.
