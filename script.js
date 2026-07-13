@@ -2,7 +2,7 @@ let dataTugas = JSON.parse(localStorage.getItem('tugas')) || [];
 
 // ========= BAGIAN 1: UNTUK SISWA =========
 const form = document.getElementById('formTugas');
-if (form) { // Cuma jalan kalau ada form
+if (form) { // Kode berjalan jika form ditemukan
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const nama = document.getElementById('nama').value;
@@ -31,7 +31,7 @@ if (form) { // Cuma jalan kalau ada form
 
 // ========= BAGIAN 2: UNTUK GURU =========
 const tabelBody = document.querySelector('#tabelTugas tbody');
-if (tabelBody) { // Cuma jalan kalau ada tabel
+if (tabelBody) { // Kode berjalan jika tabel ditemukan 
   const cariInput = document.getElementById('cariInput');
   const filterMapel = document.getElementById('filterMapel');
 
@@ -40,7 +40,7 @@ if (tabelBody) { // Cuma jalan kalau ada tabel
     filterMapel.addEventListener('change', tampilkanTugas);
   }
 
-  tampilkanTugas(); // panggil pas awal
+  tampilkanTugas(); // jalankan saat pertama kali dibuka
 }
 
 function tampilkanTugas() {
